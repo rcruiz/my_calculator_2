@@ -12,6 +12,7 @@
         <button onclick="inverse()">1/x</button>
         <button onclick="square()">x²</button>
         <button onclick="cube()">x³</button>
+        <button onclick="power_4()">x⁴</button>
     </p>
     <script type="text/javascript">
       function cube() {
@@ -26,6 +27,9 @@
         var num = document.getElementById("n1");
         num.value = 1/num.value;
       }
+      function power_4(){
+        var num = document.getElementById("n1");
+        num.value = Math.pow(num.value, 4);
+      }
     </script>
   </body>
-</html>
